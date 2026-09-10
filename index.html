@@ -1,54 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Explore India</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Incredible India | Travel & Tour Planning</title>
+    <meta name="description" content="Plan a trip across India's heritage monuments, backwaters and coastline with a local travel team.">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101114'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-weight='700' font-size='16' fill='%23f2a93b' text-anchor='middle'%3EII%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<header>
-    <h1>Explore Incredible India!!</h1>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Places</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#">Contact</a>
+<header class="site-header">
+    <div id="scroll-sentinel"></div>
+    <nav class="nav-bar" aria-label="Primary">
+        <a class="brand" href="./index.html">
+            <span class="brand-mark">II</span>
+            Incredible India
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#destinations">Places</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="nav-toggle-bars"></span>
+        </button>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Discover Incredible India</h2>
-    <p>Experience culture, heritage and nature.</p>
+<main id="main">
 
-    <button onclick="showMessage()">
-        Explore More
-    </button>
-</section>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-copy">
+                <h1>Discover incredible India</h1>
+                <p>From Mughal monuments to backwaters and beaches, three unforgettable corners of the country to start your journey.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#destinations">View Destinations</a>
+                    <a class="btn btn-ghost" href="./gallery.html">See the Gallery</a>
+                </div>
+            </div>
 
-<section class="places">
+            <div class="hero-visual">
+                <img src="./images/tajmahal.jpg" alt="The Taj Mahal at sunrise, Agra">
+                <div class="hero-visual-caption">
+                    Taj Mahal
+                    <span>Agra, Uttar Pradesh</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>Taj Mahal</h3>
-        <p>Agra, Uttar Pradesh</p>
+    <section class="values reveal">
+        <div class="container">
+            <div class="value-row">
+                <div class="value-item">
+                    <div class="icon" aria-hidden="true"><i class="ph ph-map-trifold"></i></div>
+                    <h3>Curated destinations</h3>
+                    <p>Handpicked places across India's heritage, coastline and backwaters.</p>
+                </div>
+                <div class="value-item">
+                    <div class="icon" aria-hidden="true"><i class="ph ph-users-three"></i></div>
+                    <h3>Local expertise</h3>
+                    <p>Real, on-ground travel agents who know each route and season.</p>
+                </div>
+                <div class="value-item">
+                    <div class="icon" aria-hidden="true"><i class="ph ph-calendar-check"></i></div>
+                    <h3>Personalised itineraries</h3>
+                    <p>Trips shaped around your time, budget and interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2>Where to go</h2>
+                <p>Three very different sides of India, each worth building a trip around.</p>
+            </div>
+
+            <div class="destinations-grid reveal">
+                <a class="destination-tile is-feature" href="./gallery.html">
+                    <img src="./images/tajmahal.jpg" alt="The Taj Mahal, Agra" loading="lazy" width="600" height="400">
+                    <div class="destination-tile-label">
+                        <h3>Taj Mahal</h3>
+                        <span><i class="ph ph-map-pin" aria-hidden="true"></i> Agra, Uttar Pradesh</span>
+                    </div>
+                </a>
+
+                <a class="destination-tile" href="./gallery.html">
+                    <img src="./images/kerala.jpg" alt="Traditional houseboats on the Kerala backwaters" loading="lazy" width="313" height="180">
+                    <div class="destination-tile-label">
+                        <h3>Kerala Backwaters</h3>
+                        <span><i class="ph ph-map-pin" aria-hidden="true"></i> God's Own Country</span>
+                    </div>
+                </a>
+
+                <a class="destination-tile" href="./gallery.html">
+                    <img src="./images/goa.jpeg" alt="A sunlit beach in Goa" loading="lazy" width="2900" height="1935">
+                    <div class="destination-tile-label">
+                        <h3>Goa Beaches</h3>
+                        <span><i class="ph ph-map-pin" aria-hidden="true"></i> Sun, sand and sea</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-band reveal">
+                <h2>Ready to plan your trip?</h2>
+                <p>Tell us where you'd like to go and our travel desk will put together an itinerary that fits.</p>
+                <a class="btn btn-primary" href="./contact.html">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="./index.html">
+                    <span class="brand-mark">II</span>
+                    Incredible India
+                </a>
+                <p>A small travel desk helping you plan trips across India's monuments, coastlines and backwaters.</p>
+            </div>
+
+            <div>
+                <div class="footer-heading">Explore</div>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#destinations">Places</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="footer-heading">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="./contact.html">Get in touch</a></li>
+                    <li><a href="tel:+918763796282">+91 87637 96282</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Incredible India</span>
+            <span>Made for travellers, by travellers.</span>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Kerala Backwaters</h3>
-        <p>God's Own Country</p>
-    </div>
-
-    <div class="card">
-        <h3>Goa Beaches</h3>
-        <p>Sun, Sand and Sea</p>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Explore India</p>
 </footer>
 
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 <script src="./scripts/script.js"></script>
 
 </body>
